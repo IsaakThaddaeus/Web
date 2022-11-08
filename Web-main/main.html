@@ -1,0 +1,48 @@
+<script  src="js.js"></script>
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-6.2.0-web\css\all.css">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8"> <!-- Aktivierung UTF-8 um Umlaute darzustellen-->
+
+<div class="sidenav">
+    <div class="group" onclick="groupClick()">
+        <i class="fa-solid fa-people-group fa-3x" title="Gruppenchat suchen"></i> <!-- Titel für Mouseover--> 
+    </div>
+
+    <div class="dm" onclick="dmClick()">
+        <i class="fa-solid fa-message fa-3x" title="Einzelchat suchen"></i> <!-- Titel für Mouseover--> 
+    </div>
+
+    <div class="settings" onclick="settingsClick()">
+      <i class="fa-solid fa-sliders fa-3x" title="Namen ändern"></i> <!-- Titel für Mouseover-->
+    </div>
+
+    <div class="logout" onclick="logoutClick()">
+        <i class="fa-solid fa-arrow-right-from-bracket fa-3x" title="Ausloggen"></i> <!-- Titel für Mouseover-->
+    </div>
+  </div>
+<!--
+  <div class="display-name" style="allign:center">
+     <p class="name-label" onload="displayName()" style="color:white"></p>
+  </div>-->
+
+  <FORM NAME="myform" ACTION="" METHOD="GET" class="form" id="gruppenNameId" style="visibility: hidden;">
+    <INPUT type="text" NAME="gruppe" VALUE="" placeholder="Gruppenname eingeben" class="textEnter text-eingabe"> 
+    <input TYPE="button" NAME="button" Value="Gruppe beitreten" onClick="gruppeName(this.form)" class="textEnter login-button">
+  </form>
+
+  <FORM NAME="myform" ACTION="" METHOD="GET" class="form" id="benutzerNameId" style="visibility: hidden;">
+    <INPUT type="text" NAME="benutzername" VALUE="" placeholder="Benutzername eingeben" class="textEnter text-eingabe"> 
+    <input TYPE="button" NAME="button" Value="Chat starten" onClick="benutzerName(this.form)" class="textEnter login-button">
+  </form>
+  
+  <FORM NAME="myform" ACTION="" METHOD="GET" class="form" id="settingsId" style="visibility: hidden;">
+    <INPUT type="text" NAME="user_neu" VALUE="" placeholder="Neuer Benutzername" class="textEnter text-eingabe"> 
+    <input TYPE="button" NAME="button" Value="Änderung speichern" onClick="user_aendern(this.form)" class="textEnter login-button">
+  </form>
+
+<!--
+  <FORM NAME="Nachrichtform" ACTION="" METHOD="GET" class="gruppenform" id="gruppenNachricht">
+    <INPUT type="text" NAME="gruppenN" VALUE="" placeholder="Enter Your Name" class="textEnter"> 
+    <input TYPE="button" NAME="button" Value="Login" onClick="gruppenNachricht(this.form)" class="textEnter">
+  </form>-->
