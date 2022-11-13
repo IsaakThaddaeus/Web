@@ -21,13 +21,6 @@
         <i class="fa-solid fa-arrow-right-from-bracket fa-3x" title="Ausloggen"></i> <!-- Titel für Mouseover-->
     </div>
   </div>
-<!--
-  <div class="display-name" style="allign:center">
-     <p class="name-label" onload="displayName()" style="color:white"></p>
-  </div>-->
-    
-
-  <div><img id="startlogo" src="logo-Placeholder.png" alt="Logo Placeholder" style="position:fixed; top: 100px; left: 660px; visibility: visible;"></div>
 
 
   <FORM NAME="myform" ACTION="" METHOD="GET" class="form" id="gruppenNameId" style="visibility: hidden;">
@@ -45,8 +38,17 @@
     <input TYPE="button" NAME="button" Value="Änderung speichern" onClick="user_aendern(this.form)" class="textEnter login-button">
   </form>
 
-<!--
-  <FORM NAME="Nachrichtform" ACTION="" METHOD="GET" class="gruppenform" id="gruppenNachricht">
-    <INPUT type="text" NAME="gruppenN" VALUE="" placeholder="Enter Your Name" class="textEnter"> 
-    <input TYPE="button" NAME="button" Value="Login" onClick="gruppenNachricht(this.form)" class="textEnter">
-  </form>-->
+  <FORM NAME="myform" ACTION="" METHOD="GET" class="formNachricht" id="gruppenNachrichtId" style="visibility: hidden;">
+    <INPUT type="text" NAME="gruppenChat" VALUE="" placeholder="  sag Hallo!" class="textEnterChat text-eingabe"> 
+    <input TYPE="button" NAME="button" Value="Senden" onClick="gruppenNachricht(this.form)" class="textEnter login-button">
+  </form>
+
+  <FORM NAME="myform" ACTION="" METHOD="GET" class="formNachricht" id="privatNachrichtId" style="visibility: hidden;">
+    <INPUT type="text" NAME="privatChat" VALUE="" placeholder="  sag Hallo!" class="textEnterChat text-eingabe"> 
+    <input TYPE="button" NAME="button" Value="Senden" onClick="privatNachrichtForm(this.form)" class="textEnter login-button">
+  </form>
+
+
+  <div class="gruppenChatNachrichten" id="gruppenChatNachrichtenId"> 
+
+  </div>
